@@ -1,0 +1,50 @@
+<html>
+<script>
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "ajax.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+    <style>
+    body { 
+  background: url("wallpaper.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+        color:black;
+}
+        </style>
+<body>
+
+    <h2><b>Start typing in the input field below:</b></h2>
+     </br>
+	<form action="" id="pform" method="post" class="form-horizontal">
+	<select name="users" onchange="showHint(this.value)">
+  	<option value="">Rating</option>
+		<option value="<?php echo '1 1';  ?> ">1</option>
+		<option value=<?php echo "2 1";  ?>>2</option>
+		<option value=<?php echo "3 1";  ?>>3</option>
+		<option value=<?php echo "4 1";  ?>>4</option>
+		<option value=<?php echo "5 1";  ?>>5</option>
+		</select>
+	</form>
+    </br>
+   
+<hr>
+<h3>Results: <span id="txtHint"></span></h3>
+
+</body>
+</html>

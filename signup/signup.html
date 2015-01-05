@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>SME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="//oss.maxcdn.com/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css">
+		<script src="//oss.maxcdn.com/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+ 
+		<script>
+$(document).ready(function() {
+    $('#attributeForm').bootstrapValidator();
+});
+</script>
+        <style type="text/css">
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+.carousel .item {
+  height: 400px;
+  background-color:#555;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
+
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+} 
+
+
+@media (min-width: 768px) {
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px;
+  }
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
+			body
+			{
+				 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:#fff;
+  	background-color:#324259;
+			}
+		</style>
+</head>
+<body>
+	<div class="navbar-wrapper">
+  		<div class="container">
+    		<div class="navbar navbar-inverse navbar-static-top">
+				<div class="navbar-header">
+	    			<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	      				<span class="icon-bar"></span>
+	      				<span class="icon-bar"></span>
+	      				<span class="icon-bar"></span>
+	    			</a>
+        			<a class="navbar-brand" href="http://mart.comyr.com/">SME MARKET</a>
+        		</div>
+        		<div class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav">
+						<li><a href="http://mart.comyr.com/signin/signin.html">Sign in</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="/signin/signup.html" class="active">Sign up &nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+  		</div>
+	</div> 
+<!-- Carousel-->
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    	<li data-target="#myCarousel" data-slide-to="1"></li>
+    	<li data-target="#myCarousel" data-slide-to="2"></li>
+  	</ol>
+  	<div class="carousel-inner">
+		<div class="item active">
+      		<img src="http://startupadda.in/wp-content/plugins/wp-o-matic/cache/64226dcc84_1414886421-bg-photo." style="width:100%" class="img-responsive">
+      		<div class="container">
+				<div class="carousel-caption">
+          			<h1> </h1>
+          			<p> </p>
+        		</div>
+      		</div>
+    	</div> 
+		<div class="item">
+			<img src="https://wallwidehd.com/wp-content/uploads/2015-Ferrari-Sergio-Sport-Car-Wallpaper-1500x500.jpg" class="img-responsive" >
+			<div class="container">
+        		<div class="carousel-caption">
+					<h1> </h1>
+          			<p> </p>
+        		</div>
+      		</div>	
+    	</div>
+    	<div class="item">
+      		<img src="http://static.squarespace.com/static/4ff1c58c24acf37cb37c8e9e/t/5155c051e4b05239ba819ec5/1364574292742/IMG_7531-Edit-2.jpg" class="img-responsive" width="1500px" height="500px">
+      		<div class="container">
+        		<div class="carousel-caption">
+					<h1> </h1>
+          			<p> </p>
+        		</div>
+      		</div>
+    	</div>
+  </div> 
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+	 
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
+	<center><h2>Sign Up</h2></center>
+	<hr width="80%">
+	<div class="row clearfix">
+				<div class="col-md-12 column">
+				
+					<form action="signup.php" id="attributeForm" method="post" class="form-horizontal" 
+						data-bv-message="This value is not valid"
+						data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+						data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+						data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+						<br/>
+						
+						<br/>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Company/Brand</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="cname" placeholder="Name"
+                   data-bv-notempty="true" data-bv-notempty-message="*cannot be empty" />
+        </div>
+    </div>
+	<div class="form-group">
+        <label class="col-sm-3 control-label">Name</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="user_name" placeholder="Name"
+                   data-bv-notempty="true" data-bv-notempty-message="*cannot be empty" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Email address</label>
+        <div class="col-sm-5">
+            <input class="form-control" name="email_id" type="email" placeholder="E-Mail ID eg.yourname@example.com"
+                   data-bv-emailaddress="true" data-bv-emailaddress-message="The input is not a valid email address" />
+        </div>
+						</div>
+	<div class="form-group">
+        <label class="col-sm-3 control-label">Password</label>
+        <div class="col-sm-5">
+            <input type="password" class="form-control" name="pass_word" placeholder="min. 8 characters"
+                   data-bv-notempty="true" data-bv-notempty-message="The confirm password is required and cannot be empty"
+                   data-bv-identical="true" data-bv-identical-field="confirmPassword" data-bv-identical-message="The password and its confirm are not the same" data-bv-different="true" data-bv-different-field="username" data-bv-different-message="The password cannot be the same as username" data-bv-stringlength="true" data-bv-stringlength-min="6" data-bv-stringlength-max="30" data-bv-stringlength-message="The password must be more than 8" />
+		</div>
+		</div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Retype password</label>
+        <div class="col-sm-5">
+            <input type="password" class="form-control" name="confirmPassword" placeholder="Retype the password"
+                   data-bv-notempty="true" data-bv-notempty-message="The password is required and cannot be empty"
+                   data-bv-identical="true" data-bv-identical-field="pass_word" data-bv-identical-message="The password and its confirm are not the same"
+                   data-bv-different="true" data-bv-different-field="username" data-bv-different-message="The password cannot be the same as username" data-bv-stringlength="true" data-bv-stringlength-min="6" data-bv-stringlength-max="30" data-bv-stringlength-message="The password must be more than 8"/>
+    </div>	
+		</div>
+	<div class="form-group">
+		<label class="col-sm-3 control-label">Type</label>
+		<div class="col-sm-5">
+			<select class="form-control" name="type" data-bv-notempty="true" data-bv-notempty-message="*cannot be empty">
+				<option value="Cb" >Cars and bikes</option>
+				<option value="Elec">Electronics</option>
+  				<option value="Edu">Education and learning</option>
+  				<option value="hl">Health and Lifestyle</option>
+  				<option value="Ser">Service</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+        <label class="col-sm-3 control-label">Phone Number</label>
+        <div class="col-sm-5">
+            <input class="form-control" name="phno1" type="text" placeholder="Phone number #1 with area code eg. +919000000000"
+                   data-bv-notempty="true" data-bv-notempty-message="*cannot be empty"
+                    />
+		</div>
+    </div>
+	<div class="form-group">
+        <label class="col-sm-3 control-label">Alternate Number</label>
+        <div class="col-sm-5">
+            <input class="form-control" name="phno2" type="text" placeholder="Phone number #2 with area code eg. +919000000000 "/>
+		</div>
+    </div> 
+	<div class="form-group">
+        <label class="col-sm-3 control-label">Address</label>
+        <div class="col-sm-4">
+           <textarea type="text" class="form-control" name="addr" placeholder="Give your company's address" rows="5"
+                   data-bv-notempty="true" data-bv-notempty-message="*cannot be empty"></textarea>
+        </div>
+    </div>
+		<div class="form-group">
+        <label class="col-sm-3 control-label">Description</label>
+        <div class="col-sm-4">
+			<textarea type="text" class="form-control" name="des" placeholder="Give short discription about your company(max 5000 characters)" rows="5"
+                   data-bv-notempty="true" data-bv-notempty-message="*cannot be empty"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label"><a href="terms.html">Terms and Conditions</a></label>
+        <div class="col-sm-5">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="" value="Agree" data-bv-notempty="true" data-bv-message="Agree to the terms and conditions" /> I have read the terms and conditions
+                </label>
+            </div>
+			<br/>
+        </div>
+		<br>
+		<center><button type="submit" class="btn btn-success">Sign up</button></center>
+    </div>
+</form> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  <!--
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>This is a webapp for small and medium enterprise markets <a href="#">r ashwin</a></p>
+  </footer> -->
+    </body>
+</html>
